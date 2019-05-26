@@ -1,0 +1,1 @@
+<view bind:__l="__l"><button type="primary" data-event-opts="{{[['tap',[['quit',['$event']]]]]}}" bindtap="__e">退出</button></view>
