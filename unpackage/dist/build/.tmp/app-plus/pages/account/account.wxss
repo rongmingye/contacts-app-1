@@ -1,0 +1,16 @@
+
+.account_content{
+	padding: 20px 15px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.account_content view{
+	margin-top: 15px;
+}
+.account_content .footer{
+	margin-top: 30px;
+}
+.account_content .footer button{
+	width: 100px;
+}
+

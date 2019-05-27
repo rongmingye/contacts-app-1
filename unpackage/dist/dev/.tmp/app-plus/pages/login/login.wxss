@@ -1,0 +1,27 @@
+
+.login_content{
+	padding: 20px 15px;
+}
+.login_content .uni-form-item{
+	line-height: 30px;
+	padding: 10px 0;
+}
+.login_content .uni-input{
+	margin-top: 10px;
+}
+.login_content .footer{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-top: 10px;
+}
+.login_content .footer button{
+	display: inline-block;
+	width: 100px;
+}
+
