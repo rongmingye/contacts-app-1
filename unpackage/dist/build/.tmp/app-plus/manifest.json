@@ -5,12 +5,12 @@
     "iPad"
   ],
   "id": "__UNI__3E4A726",
-  "name": "contacts-app-1",
+  "name": "米仓同步助手",
   "version": {
     "name": "1.0.0",
     "code": "100"
   },
-  "description": "",
+  "description": "米仓同步助手, 用于通讯录同步",
   "launch_path": "__uniapptabbar.html",
   "developer": {
     "name": "",
@@ -18,6 +18,7 @@
     "url": ""
   },
   "permissions": {
+    "Contacts": {},
     "UniNView": {
       "description": "UniNView原生渲染"
     }
@@ -44,6 +45,30 @@
     },
     "usingComponents": true,
     "distribute": {
+      "icons": {
+        "ios": {
+          "appstore": "static/icon.png",
+          "iphone": {
+            "app@2x": "static/icon.png",
+            "app@3x": "static/icon.png",
+            "spotlight@2x": "static/icon.png",
+            "spotlight@3x": "static/icon.png",
+            "settings@2x": "static/icon.png",
+            "settings@3x": "static/icon.png"
+          }
+        }
+      },
+      "splashscreen": {
+        "ios": {
+          "iphone": {
+            "portrait-896h@3x": "static/icon.png",
+            "retina47l": "/Users/rmy/iosapp/icon.png",
+            "retina47": "/Users/rmy/iosapp/icon.png",
+            "landscape-896h@3x": "static/icon.png",
+            "retina55": "static/icon.png"
+          }
+        }
+      },
       "google": {
         "permissions": [
           "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",

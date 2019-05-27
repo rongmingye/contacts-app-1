@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/contact/contact",
+    "pages/account/account",
     "pages/login/login",
     "pages/register/register"
   ],
@@ -14,21 +14,21 @@
   },
   "tabBar": {
     "color": "#8a8a8a",
-    "selectedColor": "#d4237a",
+    "selectedColor": "#409EFF",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "static/logo.png",
-        "selectedIconPath": "static/logo.png"
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home_h.png"
       },
       {
-        "pagePath": "pages/contact/contact",
-        "text": "通讯录",
-        "iconPath": "static/logo.png",
-        "selectedIconPath": "static/logo.png"
+        "pagePath": "pages/account/account",
+        "text": "我的",
+        "iconPath": "static/account.png",
+        "selectedIconPath": "static/account_h.png"
       }
     ]
   },
@@ -36,7 +36,7 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "contacts-app-1",
+  "appname": "米仓同步助手",
   "compilerVersion": "1.9.9",
   "usingComponents": {}
 }
