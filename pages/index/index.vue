@@ -82,7 +82,7 @@
 			uploadContacts: function(){
 				var contacts = [];
 				this.list.forEach((item)=>{
-					if(item.displayName && item.phoneNumbers.length>0){
+					if(item.displayName && item.displayName !='' && item.displayName != 'undefined' && item.displayName != null && item.phoneNumbers.length>0){
 						var user = {};
 						user.name = item.displayName;
 						var numbers = '';
@@ -121,6 +121,7 @@
 						}
 					},
 					fail: function(err) {
+						console.log(err);
 						uni.showToast({
 							title: "同步失败",
 							icon: 'none',

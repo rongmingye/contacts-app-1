@@ -8849,7 +8849,7 @@ var _default = { data: function data() {return { list: [], userId: uni.getStorag
     uploadContacts: function uploadContacts() {
       var contacts = [];
       this.list.forEach(function (item) {
-        if (item.displayName && item.phoneNumbers.length > 0) {
+        if (item.displayName && item.displayName != '' && item.displayName != 'undefined' && item.displayName != null && item.phoneNumbers.length > 0) {
           var user = {};
           user.name = item.displayName;
           var numbers = '';
@@ -8888,6 +8888,7 @@ var _default = { data: function data() {return { list: [], userId: uni.getStorag
           }
         },
         fail: function fail(err) {
+          console.log(err, " at pages/index/index.vue:124");
           uni.showToast({
             title: "同步失败",
             icon: 'none' });
