@@ -1,9 +1,9 @@
 <template>
 	<view class="account_content">
-		<view> 账号: {{account}} </view>
-		<view> 昵称: {{nickname}} </view>
+		<view class="account_num"> {{account}} </view>
+		<view class="account_name"> 昵称: {{nickname}} </view>
 		<view class="footer">
-			<button type="primary" @tap="quit()">退出</button>
+			<button type="default" @tap="quit()">退出</button>
 		</view>
 		
 	</view>
@@ -34,16 +34,19 @@
 <style>
 	.account_content{
 		padding: 20px 15px;
-		line-height: 30px;
+		line-height: 40px;
 		font-size: 20px;
 	}
 	.account_content view{
 		margin-top: 15px;
 	}
+	.account_content .account_num{
+		font-size: 24px;
+	}
 	.account_content .footer{
 		margin-top: 30px;
 	}
 	.account_content .footer button{
-		width: 100px;
+		
 	}
 </style>

@@ -63,7 +63,7 @@
 						contacts = contacts.filter(item => {
 							return item.displayName && item.phoneNumbers.length>0;
 						})
-						that.list = contacts
+						that.list = contacts;
 					}, function () {
 						uni.showToast({
 						    title: '获取联系人失败',
@@ -80,15 +80,17 @@
 				});
 			},
 			uploadContacts: function(){
-				var contacts = ""
+				var contacts = [];
 				this.list.forEach((item)=>{
-					if(!item.displayName && !item.phoneNumbers){
-						contacts += item.displayName + ',';
+					if(item.displayName && item.phoneNumbers.length>0){
+						var user = {};
+						user.name = item.displayName;
 						var numbers = '';
 						item.phoneNumbers.forEach((num) => {
 							numbers += ' ' + num.value
 						})
-						contacts += numbers + ';'
+						user.phone = numbers.trim();
+						contacts.push(user);
 					}
 				})
 				var params = {
@@ -101,7 +103,7 @@
 					method: 'POST',					
 					data: params,
 					header: {
-						'content-type': 'application/x-www-form-urlencoded'
+						'content-type': 'application/json',
 					},
 					success: (res) => {
 						console.log(res)
@@ -134,18 +136,21 @@
 	.home_content{
 		padding: 20px 15px;
 	}
+	.home_content .header{
+		display: flex;
+		justify-content: space-between;
+	}
 	.home_content .header .get_btn{
 		width: 140px;
 	}
 	.home_content .header .upload_btn{
 		width: 100px;
-		margin-left: 20px;
 	}
 	.contact_list{
 		margin-top: 15px;
 	}
 	.contact_list .contact_item{
-		line-height: 30px;
+		line-height: 40px;
 	}
 	.contact_list .name{
 		display: inline-block;

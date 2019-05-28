@@ -2,18 +2,27 @@
 .home_content{
 	padding: 20px 15px;
 }
+.home_content .header{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
 .home_content .header .get_btn{
 	width: 140px;
 }
 .home_content .header .upload_btn{
 	width: 100px;
-	margin-left: 20px;
 }
 .contact_list{
 	margin-top: 15px;
 }
 .contact_list .contact_item{
-	line-height: 30px;
+	line-height: 40px;
 }
 .contact_list .name{
 	display: inline-block;

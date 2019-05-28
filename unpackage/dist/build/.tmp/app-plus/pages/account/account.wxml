@@ -1,1 +1,1 @@
-<view class="account_content" bind:__l="__l"><view>{{'账号: '+account+''}}</view><view>{{'昵称: '+nickname+''}}</view><view class="footer"><button type="primary" data-event-opts="{{[['tap',[['quit']]]]}}" bindtap="__e">退出</button></view></view>
+<view class="account_content" bind:__l="__l"><view class="account_num">{{''+account+''}}</view><view class="account_name">{{'昵称: '+nickname+''}}</view><view class="footer"><button type="default" data-event-opts="{{[['tap',[['quit']]]]}}" bindtap="__e">退出</button></view></view>

@@ -2,8 +2,8 @@
 	<view class="register_content">
 		<view class="uni-common-mt">
             <view class="uni-form-item uni-column">
-                <view class="title">账号:</view>
-                <input class="uni-input" focus id="account" placeholder="请输入账号"  v-model:value="user.account" />
+                <view class="title">账号(手机号):</view>
+                <input class="uni-input"  id="account" placeholder="请输入账号"  v-model:value="user.account" />
             </view>
 			 <view class="uni-form-item uni-column">
                 <view class="title">昵称:</view>
@@ -113,12 +113,6 @@
 		margin-top: 10px;
 	}
 	.register_content .footer{
-		display: flex;
-		justify-content: space-between;
-		margin-top: 10px;
-	}
-	.register_content .footer button{
-		display: inline-block;
-		width: 100px;
+		margin-top: 30px;
 	}
 </style>

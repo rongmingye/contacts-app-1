@@ -3,7 +3,7 @@
 		<view class="uni-common-mt">
             <view class="uni-form-item uni-column">
                 <view class="title">账号:</view>
-                <input class="uni-input" focus placeholder="请输入账号" v-model:value="user.account" />
+                <input class="uni-input"  placeholder="请输入账号" v-model:value="user.account" />
             </view>
 			<view class="uni-form-item uni-column">
 			    <view class="title">密码:</view>

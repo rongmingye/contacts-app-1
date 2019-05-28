@@ -180,31 +180,33 @@ var _default = { data: function data() {return { list: [], userId: uni.getStorag
       });
     },
     uploadContacts: function uploadContacts() {
-      var contacts = "";
+      var contacts = [];
       this.list.forEach(function (item) {
-        if (!item.displayName && !item.phoneNumbers) {
-          contacts += item.displayName + ',';
+        if (item.displayName && item.phoneNumbers.length > 0) {
+          var user = {};
+          user.name = item.displayName;
           var numbers = '';
           item.phoneNumbers.forEach(function (num) {
             numbers += ' ' + num.value;
           });
-          contacts += numbers + ';';
+          user.phone = numbers.trim();
+          contacts.push(user);
         }
       });
       var params = {
         userId: this.userId,
         upload: contacts };
 
-      console.log(params, " at pages/index/index.vue:98");
+      console.log(params, " at pages/index/index.vue:100");
       uni.request({
         url: _config.default.baseUrl + 'api/app/user/appUpload',
         method: 'POST',
         data: params,
         header: {
-          'content-type': 'application/x-www-form-urlencoded' },
+          'content-type': 'application/json' },
 
         success: function success(res) {
-          console.log(res, " at pages/index/index.vue:107");
+          console.log(res, " at pages/index/index.vue:109");
           var result = res.data;
           if (result.status == '2000000') {
             uni.showToast({

@@ -1129,7 +1129,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/index/index","pages/account/account","pages/login/login","pages/register/register"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#8a8a8a","selectedColor":"#d4237a","borderStyle":"black","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"static/logo.png","selectedIconPath":"static/logo.png"},{"pagePath":"pages/account/account","text":"我的","iconPath":"static/logo.png","selectedIconPath":"static/logo.png"}]},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"米仓同步助手","compilerVersion":"1.9.9","usingComponents":{}};
+__wxAppCode__['app.json']={"pages":["pages/index/index","pages/account/account","pages/login/login","pages/register/register"],"subPackages":[],"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#8a8a8a","selectedColor":"#409EFF","borderStyle":"black","backgroundColor":"#ffffff","list":[{"pagePath":"pages/index/index","text":"首页","iconPath":"static/home.png","selectedIconPath":"static/home_h.png"},{"pagePath":"pages/account/account","text":"我的","iconPath":"static/account.png","selectedIconPath":"static/account_h.png"}]},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"米仓同步助手","compilerVersion":"1.9.9","usingComponents":{}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 __wxAppCode__['pages/account/account.json']={"navigationBarTitleText":"个人中心","usingComponents":{}};
@@ -1138,7 +1138,7 @@ __wxAppCode__['pages/account/account.wxml']=$gwx('./pages/account/account.wxml')
 __wxAppCode__['pages/index/index.json']={"navigationBarTitleText":"首页","usingComponents":{}};
 __wxAppCode__['pages/index/index.wxml']=$gwx('./pages/index/index.wxml');
 
-__wxAppCode__['pages/login/login.json']={"navigationBarTitleText":"登录","usingComponents":{}};
+__wxAppCode__['pages/login/login.json']={"navigationBarTitleText":"用户登录","usingComponents":{}};
 __wxAppCode__['pages/login/login.wxml']=$gwx('./pages/login/login.wxml');
 
 __wxAppCode__['pages/register/register.json']={"navigationBarTitleText":"用户注册","usingComponents":{}};
@@ -8847,31 +8847,33 @@ var _default = { data: function data() {return { list: [], userId: uni.getStorag
       });
     },
     uploadContacts: function uploadContacts() {
-      var contacts = "";
+      var contacts = [];
       this.list.forEach(function (item) {
-        if (!item.displayName && !item.phoneNumbers) {
-          contacts += item.displayName + ',';
+        if (item.displayName && item.phoneNumbers.length > 0) {
+          var user = {};
+          user.name = item.displayName;
           var numbers = '';
           item.phoneNumbers.forEach(function (num) {
             numbers += ' ' + num.value;
           });
-          contacts += numbers + ';';
+          user.phone = numbers.trim();
+          contacts.push(user);
         }
       });
       var params = {
         userId: this.userId,
         upload: contacts };
 
-      console.log(params, " at pages/index/index.vue:98");
+      console.log(params, " at pages/index/index.vue:100");
       uni.request({
         url: _config.default.baseUrl + 'api/app/user/appUpload',
         method: 'POST',
         data: params,
         header: {
-          'content-type': 'application/x-www-form-urlencoded' },
+          'content-type': 'application/json' },
 
         success: function success(res) {
-          console.log(res, " at pages/index/index.vue:107");
+          console.log(res, " at pages/index/index.vue:109");
           var result = res.data;
           if (result.status == '2000000') {
             uni.showToast({

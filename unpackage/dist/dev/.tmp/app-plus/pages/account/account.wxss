@@ -1,16 +1,18 @@
 
 .account_content{
 	padding: 20px 15px;
-	line-height: 30px;
+	line-height: 40px;
 	font-size: 20px;
 }
 .account_content view{
 	margin-top: 15px;
 }
+.account_content .account_num{
+	font-size: 24px;
+}
 .account_content .footer{
 	margin-top: 30px;
 }
 .account_content .footer button{
-	width: 100px;
 }
 
