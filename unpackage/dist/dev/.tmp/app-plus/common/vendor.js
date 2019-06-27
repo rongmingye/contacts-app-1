@@ -1,31 +1,32 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/config/config.js":
-/*!*************************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/config/config.js ***!
-  \*************************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/config/config.js":
+/*!************************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/config/config.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var baseUrl = "http://47.106.253.119:8089/";var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // const baseUrl = "http://202.95.13.60:8089/"
+var baseUrl = "http://119.23.41.186:8089/";var _default =
 
 {
   baseUrl: baseUrl };exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/main.js":
-/*!****************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/main.js ***!
-  \****************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/main.js":
+/*!***************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/main.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../../Users/rmy/selftspace/contacts-app-1/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../../Users/rmy/partgroup/contacts-app-1/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 
 _vue.default.config.productionTip = false;
 
@@ -39,78 +40,78 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/main.js?{\"page\":\"pages%2Faccount%2Faccount\"}":
-/*!*****************************************************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/main.js?{"page":"pages%2Faccount%2Faccount"} ***!
-  \*****************************************************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/main.js?{\"page\":\"pages%2Faccount%2Faccount\"}":
+/*!****************************************************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/main.js?{"page":"pages%2Faccount%2Faccount"} ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _account = _interopRequireDefault(__webpack_require__(/*! ./pages/account/account.vue */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages/account/account.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _account = _interopRequireDefault(__webpack_require__(/*! ./pages/account/account.vue */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages/account/account.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_account.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
-/*!*************************************************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \*************************************************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
+/*!************************************************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/main.js?{\"page\":\"pages%2Flogin%2Flogin\"}":
-/*!*************************************************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
-  \*************************************************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/main.js?{\"page\":\"pages%2Flogin%2Flogin\"}":
+/*!************************************************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login.vue */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login.vue */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_login.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/main.js?{\"page\":\"pages%2Fregister%2Fregister\"}":
-/*!*******************************************************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/main.js?{"page":"pages%2Fregister%2Fregister"} ***!
-  \*******************************************************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/main.js?{\"page\":\"pages%2Fregister%2Fregister\"}":
+/*!******************************************************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/main.js?{"page":"pages%2Fregister%2Fregister"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/register/register.vue */ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages/register/register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/register/register.vue */ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages/register/register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_register.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/rmy/selftspace/contacts-app-1/pages.json":
-/*!*******************************************************!*\
-  !*** /Users/rmy/selftspace/contacts-app-1/pages.json ***!
-  \*******************************************************/
+/***/ "../../../../../../Users/rmy/partgroup/contacts-app-1/pages.json":
+/*!******************************************************!*\
+  !*** /Users/rmy/partgroup/contacts-app-1/pages.json ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

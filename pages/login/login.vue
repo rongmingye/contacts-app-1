@@ -59,9 +59,9 @@
 							console.log(res);
 							var result = res.data;
 							if(result.status == "2000000"){
-								uni.setStorageSync('account', result.data.account,);
-								uni.setStorageSync('nickname', result.data.nickname,);
-								uni.setStorageSync('userId', result.data.id,);
+								uni.setStorageSync('account', result.data.account);
+								uni.setStorageSync('nickname', result.data.nickname);
+								uni.setStorageSync('userId', result.data.id);
 								uni.switchTab({
 									url: '/pages/index/index'
 								});

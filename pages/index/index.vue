@@ -59,10 +59,10 @@
 						    duration: 2000
 						})
 						console.log('获取联系人成功')
-						// console.log(JSON.stringify(contacts))
 						contacts = contacts.filter(item => {
 							return item.displayName && item.phoneNumbers.length>0;
 						})
+						console.log(JSON.stringify(contacts))
 						that.list = contacts;
 					}, function () {
 						uni.showToast({
